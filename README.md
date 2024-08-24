@@ -1,5 +1,14 @@
-# Measuring Multipartite Entanglement with IBM Quantum computers
+# Quantum computing odds and ends
 
+This is a running collection of half-baked things. 
+
+## Multipartite entanglement
+
+This is based on the experiments described in 
+
+ - [<i>Phys. Rev. Lett.</i> <b>129</b>, 150401 (2022)](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.129.150401)
+
+ - [<i>Phys. Rev. Lett.</i> <b>129</b>, 150401 (2022)](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.129.150401)
 There are two copies of a Jupyter notebook to probe entanglement in the $n$-qubit GHZ state
 
 $$|\mbox{GHZ}_{n}\rangle = \frac{1}{\sqrt{2}}\left(|00\cdots0\rangle + |11\cdots1\rangle\right)$$
