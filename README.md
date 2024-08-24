@@ -30,7 +30,7 @@ The following two references are some useful:
 
 The Peres-Mermin square is the following arrangement of operators such that all operators in each row commute with each other. The operators in each column also commute.
 
-$$\left[\begin{array}{ccc} \hat{A} & \hat{B} & \hat{C}\\ \hat{a} & \hat{b} & \hat{c} \\ \hat{\alpha} & \hat{\beta} & \hat{\gamma} \end{array}\right]$$
+$$\left(\begin{array}{ccc} \hat{A} & \hat{B} & \hat{C}\\ \hat{a} & \hat{b} & \hat{c} \\ \hat{\alpha} & \hat{\beta} & \hat{\gamma} \end{array}\right)$$
 
 Each row and each column is said to form a "context" in which all three observables may be measured simultaneously. Assigning a sense of "reality" to each of the nine quantities is possible if nature is "non-contextual." Note that observables from different contexts do <i>not</i> commute. Each quantity is assumed to take measure values of $\pm 1$. Assuming the simultaneous "reality" of all nine quantities, one can argue
 
@@ -38,6 +38,6 @@ $$\langle \hat{A}\hat{B}\hat{C} \rangle + \langle \hat{a}\hat{b}\hat{c} \rangle 
 
 The notebook [ContextualitySquare.ipynb](ContextualitySquare.ipynb) uses Qiskit's circuit simulator to explore contextuality for the specific representation
 
-$$\left[\begin{array}{ccc} \hat{A} & \hat{B} & \hat{C}\\ \hat{a} & \hat{b} & \hat{c} \\ \hat{\alpha} & \hat{\beta} & \hat{\gamma} \end{array}\right] = \left[\begin{array}{ccc} \hat{I}\otimes\hat{\sigma}^{z} & \hat{I}\otimes\hat{\sigma}^{z} & \hat{\sigma}^{z}\otimes\hat{\sigma}^{z} \\ \hat{I}\otimes\hat{\sigma}^{x} & \hat{\sigma}^{x}\otimes\hat{I} & \hat{\sigma}^{x}\otimes\hat{\sigma}^{x} \\ \hat{\sigma}^{z}\otimes\hat{\sigma}^{x} & \hat{\sigma}^{x}\otimes\hat{\sigma}^{z} & \hat{\sigma}^{y}\otimes\hat{\sigma}^{y} \end{array}\right]$$
+$$\left(\begin{array}{ccc} \hat{A} & \hat{B} & \hat{C}\\ \hat{a} & \hat{b} & \hat{c} \\ \hat{\alpha} & \hat{\beta} & \hat{\gamma} \end{array}\right) = \left(\begin{array}{ccc} \hat{I}\otimes\hat{\sigma}^{z} & \hat{I}\otimes\hat{\sigma}^{z} & \hat{\sigma}^{z}\otimes\hat{\sigma}^{z} \\ \hat{I}\otimes\hat{\sigma}^{x} & \hat{\sigma}^{x}\otimes\hat{I} & \hat{\sigma}^{x}\otimes\hat{\sigma}^{x} \\ \hat{\sigma}^{z}\otimes\hat{\sigma}^{x} & \hat{\sigma}^{x}\otimes\hat{\sigma}^{z} & \hat{\sigma}^{y}\otimes\hat{\sigma}^{y} \end{array}\right)$$
 
-This is a pedagogical take that works through the subtlety of treating the operators $\hat{A},\cdots, \hat{\gamma}$ as fundamental rather than the implied representation in terms of two-qubit measurements (e.g., $\hat{\sigma}^{z}\otimes\hat{\sigma}^{z}).
+This is a pedagogical take that works through the subtlety of treating the operators $\hat{A},\cdots, \hat{\gamma}$ as fundamental rather than the implied representation in terms of two-qubit measurements (e.g., $\hat{\sigma}^{z}\otimes\hat{\sigma}^{z}$).
