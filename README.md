@@ -28,16 +28,12 @@ The following two references are some useful:
   
 - A. Laghaout <i>et al.</i>, <i>Eur. J. Phys.</i> <b>43</b>, 055401 (2022). ([open access](https://iopscience.iop.org/article/10.1088/1361-6404/ac79e0/meta))
 
-The Peres-Mermin square is the following arrangement of operators such that all operators in each row commute with each other. The operators in each column also commute.
-
-$$\left(\begin{array}{ccc} \hat{A} & \hat{B} & \hat{C}\\ \hat{a} & \hat{b} & \hat{c} \\ \hat{\alpha} & \hat{\beta} & \hat{\gamma} \end{array}\right)$$
+The Peres-Mermin square is a particular arrangement of operators such that all operators in each row commute with each other. The operators in each column also commute.
 
 Each row and each column is said to form a "context" in which all three observables may be measured simultaneously. Assigning a sense of "reality" to each of the nine quantities is possible if nature is "non-contextual." Note that observables from different contexts do <i>not</i> commute. Each quantity is assumed to take measure values of $\pm 1$. Assuming the simultaneous "reality" of all nine quantities, one can argue
 
 $$\langle \hat{A}\hat{B}\hat{C} \rangle + \langle \hat{a}\hat{b}\hat{c} \rangle  + \langle \hat{\alpha}\hat{\beta}\hat{\gamma} \rangle  + \langle \hat{A}\hat{a}\hat{\alpha} \rangle  + \langle \hat{B}\hat{b}\hat{\beta} \rangle  - \langle \hat{C}\hat{c}\hat{\gamma} \rangle \leq 4$$
 
-The notebook [ContextualitySquare.ipynb](ContextualitySquare.ipynb) uses Qiskit's circuit simulator to explore contextuality for the specific representation
-
-$$\left(\begin{array}{ccc} \hat{A} & \hat{B} & \hat{C}\\ \hat{a} & \hat{b} & \hat{c} \\ \hat{\alpha} & \hat{\beta} & \hat{\gamma} \end{array}\right) = \left(\begin{array}{ccc} \hat{I}\otimes\hat{\sigma}^{z} & \hat{I}\otimes\hat{\sigma}^{z} & \hat{\sigma}^{z}\otimes\hat{\sigma}^{z} \\ \hat{I}\otimes\hat{\sigma}^{x} & \hat{\sigma}^{x}\otimes\hat{I} & \hat{\sigma}^{x}\otimes\hat{\sigma}^{x} \\ \hat{\sigma}^{z}\otimes\hat{\sigma}^{x} & \hat{\sigma}^{x}\otimes\hat{\sigma}^{z} & \hat{\sigma}^{y}\otimes\hat{\sigma}^{y} \end{array}\right)$$
+The notebook [ContextualitySquare.ipynb](ContextualitySquare.ipynb) uses Qiskit's circuit simulator to explore contextuality for the specific representation in terms of spin operators.
 
 This is a pedagogical take that works through the subtlety of treating the operators $\hat{A},\cdots, \hat{\gamma}$ as fundamental rather than the implied representation in terms of two-qubit measurements (e.g., $\hat{\sigma}^{z}\otimes\hat{\sigma}^{z}$).
